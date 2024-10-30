@@ -21,7 +21,7 @@ public class ModBlocks {
 
     public static final Block TERMITE_MOUND = registerBlock("termite_mound",
             new Block(AbstractBlock.Settings.create().strength(4.0F, 5.0F)
-                    .requiresTool().sounds(BlockSoundGroup.BONE)));
+                    .requiresTool().sounds(BlockSoundGroup.CORAL)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
