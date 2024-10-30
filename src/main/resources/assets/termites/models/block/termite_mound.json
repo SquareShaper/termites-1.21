@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_column",
   "textures": {
-    "all": "termites:block/termite_mound"
+    "end": "termites:block/termite_mound_top",
+    "side": "termites:block/termite_mound"
   }
 }
