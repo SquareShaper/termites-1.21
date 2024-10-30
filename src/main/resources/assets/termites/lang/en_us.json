@@ -1,6 +1,9 @@
 {
   "item.termites.chitin": "Chitin",
+  "item.termites.burnt_chitin": "Burnt Chitin",
   "item.termites.termite_treat": "Termite Treat",
+  "item.termites.funny_stick": "Funny Stick",
   "block.termites.chitin_block": "Chitin Block",
-  "block.termites.termite_mound": "Termite Mound"
+  "block.termites.termite_mound": "Termite Mound",
+  "itemgroup.termites.funny_items": "Funny Items"
 }

@@ -1,6 +1,7 @@
 package com.squareshaper.termites;
 
 import com.squareshaper.termites.block.ModBlocks;
+import com.squareshaper.termites.item.ModItemGroups;
 import com.squareshaper.termites.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -15,5 +16,6 @@ public class Termites implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModItemGroups.registerModItemGroups();
 	}
 }

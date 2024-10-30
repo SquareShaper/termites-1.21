@@ -10,7 +10,9 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item CHITIN = registerItem("chitin", new Item(new Item.Settings()));
+    public static final Item BURNT_CHITIN = registerItem("burnt_chitin", new Item(new Item.Settings()));
     public static final Item TERMITE_TREAT = registerItem("termite_treat", new Item(new Item.Settings()));
+    public static final Item FUNNY_STICK = registerItem("funny_stick", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Termites.MOD_ID, name), item);
@@ -21,6 +23,7 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(CHITIN);
+            entries.add(BURNT_CHITIN);
             entries.add(TERMITE_TREAT);
         });
     }
