@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "termites",
+	"version": "${version}",
+	"name": "Termites",
+	"description": "INSERT PLEASE",
+	"authors": [
+		"SquareShaper"
+	],
+	"contact": {
+		"homepage": "INSERT PLEASE",
+		"sources": "INSERT PLEASE"
+	},
+	"license": "MIT",
+	"icon": "assets/termites/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.squareshaper.termites.Termites"
+		],
+		"fabric-datagen": [
+			"com.squareshaper.termites.TermitesDataGenerator"
+		],
+		"client": [
+			"com.squareshaper.termites.TermitesClient"
+		]
+	},
+	"mixins": [
+		"termites.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
