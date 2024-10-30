@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "termites:block/chitin_block"
+    }
+  }
+}
