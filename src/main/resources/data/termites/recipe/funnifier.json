@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "funny",
+  "key": {
+    "#": {
+      "item": "termites:funny_stick"
+    },
+    "X": {
+      "item": "termites:chitin"
+    }
+  },
+  "pattern": [
+    "X",
+    "#",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "termites:funnifier"
+  }
+}

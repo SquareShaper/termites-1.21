@@ -20,6 +20,7 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_FUNNY_CLUMP);
                         entries.add(ModItems.FUNNY_BALLS);
                         entries.add(ModItems.FUNNY_STICK);
+                        entries.add(ModItems.FUNNIFIER);
                     })
                     .build());
 
