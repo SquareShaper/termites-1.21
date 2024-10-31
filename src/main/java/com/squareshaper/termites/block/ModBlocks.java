@@ -4,6 +4,7 @@ import com.squareshaper.termites.Termites;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -12,16 +13,22 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
 
     public static final Block CHITIN_BLOCK = registerBlock("chitin_block",
             new Block(AbstractBlock.Settings.create().strength(5.0F, 6.0F)
-                    .requiresTool().sounds(BlockSoundGroup.BASALT).instrument(NoteBlockInstrument.BASEDRUM)));
+                    .sounds(BlockSoundGroup.BASALT).instrument(NoteBlockInstrument.BASEDRUM)));
 
     public static final Block TERMITE_MOUND = registerBlock("termite_mound",
             new Block(AbstractBlock.Settings.create().strength(4.0F, 5.0F)
                     .requiresTool().sounds(BlockSoundGroup.CORAL)));
+
+    public static final Block FUNNY_ORE = registerBlock("funny_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2,5),
+                    AbstractBlock.Settings.create().strength(5.0F, 6.0F)
+                    .requiresTool().sounds(BlockSoundGroup.STONE)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

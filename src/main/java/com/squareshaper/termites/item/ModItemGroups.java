@@ -1,6 +1,7 @@
 package com.squareshaper.termites.item;
 
 import com.squareshaper.termites.Termites;
+import com.squareshaper.termites.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -15,6 +16,9 @@ public class ModItemGroups {
             FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.FUNNY_STICK))
                     .displayName(Text.translatable("itemgroup.termites.funny_items"))
                     .entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.FUNNY_ORE);
+                        entries.add(ModItems.RAW_FUNNY_CLUMP);
+                        entries.add(ModItems.FUNNY_BALLS);
                         entries.add(ModItems.FUNNY_STICK);
                     })
                     .build());

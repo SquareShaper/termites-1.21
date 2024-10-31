@@ -13,6 +13,8 @@ public class ModItems {
     public static final Item BURNT_CHITIN = registerItem("burnt_chitin", new Item(new Item.Settings()));
     public static final Item TERMITE_TREAT = registerItem("termite_treat", new Item(new Item.Settings()));
     public static final Item FUNNY_STICK = registerItem("funny_stick", new Item(new Item.Settings()));
+    public static final Item FUNNY_BALLS = registerItem("funny_balls", new Item(new Item.Settings()));
+    public static final Item RAW_FUNNY_CLUMP = registerItem("raw_funny_clump", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Termites.MOD_ID, name), item);

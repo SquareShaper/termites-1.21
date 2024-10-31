@@ -1,14 +1,14 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "chitin",
+  "group": "funny",
   "ingredients": [
     {
-      "item": "termites:chitin_block"
+      "item": "termites:raw_funny_clump"
     }
   ],
   "result": {
-    "count": 9,
-    "id": "termites:chitin"
+    "count": 1,
+    "id": "termites:funny_balls"
   }
 }

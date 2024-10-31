@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "funny",
+  "key": {
+    "#": {
+      "item": "termites:funny_balls"
+    }
+  },
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "result": {
+    "count": 4,
+    "id": "termites:funny_stick"
+  }
+}
