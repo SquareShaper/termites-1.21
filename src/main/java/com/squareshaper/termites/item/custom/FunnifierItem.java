@@ -44,7 +44,6 @@ public class FunnifierItem extends Item {
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
         World world = context.getWorld();
-        Block clickedBlock = world.getBlockState(context.getBlockPos()).getBlock();
 
         if (!world.isClient()) {
             world.setBlockState(context.getBlockPos(), ModBlocks.FUNNY_ORE.getDefaultState());
