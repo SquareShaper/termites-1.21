@@ -1,6 +1,7 @@
 package com.squareshaper.termites.block;
 
 import com.squareshaper.termites.Termites;
+import com.squareshaper.termites.block.custom.HotChitinBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -19,6 +20,10 @@ public class ModBlocks {
 
     public static final Block CHITIN_BLOCK = registerBlock("chitin_block",
             new Block(AbstractBlock.Settings.create().strength(5.0F, 6.0F)
+                    .sounds(BlockSoundGroup.BASALT).instrument(NoteBlockInstrument.BASEDRUM)));
+
+    public static final Block HOT_CHITIN_BLOCK = registerBlock("hot_chitin_block",
+            new HotChitinBlock(AbstractBlock.Settings.create().strength(5.0F, 6.0F)
                     .sounds(BlockSoundGroup.BASALT).instrument(NoteBlockInstrument.BASEDRUM)));
 
     public static final Block TERMITE_MOUND = registerBlock("termite_mound",
@@ -45,6 +50,7 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(CHITIN_BLOCK);
+            entries.add(HOT_CHITIN_BLOCK);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
             entries.add(TERMITE_MOUND);
