@@ -23,7 +23,7 @@ public class ModItems {
     public static final Item RAW_FUNNY_CLUMP = registerItem("raw_funny_clump", new Item(new Item.Settings()));
     public static final Item FUNNY_BALLS = registerItem("funny_balls", new FunnyBallsItem(new Item.Settings().maxCount(64)));
     public static final Item FUNNY_STICK = registerItem("funny_stick", new Item(new Item.Settings()));
-    public static final Item FUNNIFIER = registerItem("funnifier", new FunnifierItem(new Item.Settings()));
+    public static final Item FUNNIFIER = registerItem("funnifier", new FunnifierItem(new Item.Settings().maxDamage(320)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Termites.MOD_ID, name), item);

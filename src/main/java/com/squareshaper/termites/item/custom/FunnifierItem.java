@@ -2,11 +2,17 @@ package com.squareshaper.termites.item.custom;
 
 import com.squareshaper.termites.block.ModBlocks;
 import net.minecraft.block.Block;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
+import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.server.world.ServerWorld;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvent;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.world.World;
@@ -27,9 +33,12 @@ public class FunnifierItem extends Item {
             } else {
                 entity.noClip = true;
             }
+            stack.damage(1, ((ServerWorld) world), ((ServerPlayerEntity) user),
+                    item -> user.sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
+            world.playSound(null, entity.getBlockPos(), SoundEvents.ENTITY_WOLF_WHINE, SoundCategory.BLOCKS);
         }
 
-        return super.useOnEntity(stack, user, entity, hand);
+        return ActionResult.SUCCESS;
     }
 
     @Override
@@ -39,8 +48,11 @@ public class FunnifierItem extends Item {
 
         if (!world.isClient()) {
             world.setBlockState(context.getBlockPos(), ModBlocks.FUNNY_ORE.getDefaultState());
+            context.getStack().damage(1, ((ServerWorld) world), ((ServerPlayerEntity) context.getPlayer()),
+                    item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
+            world.playSound(null, context.getBlockPos(), SoundEvents.ENTITY_WOLF_WHINE, SoundCategory.BLOCKS);
         }
 
-        return super.useOnBlock(context);
+        return ActionResult.SUCCESS;
     }
 }
