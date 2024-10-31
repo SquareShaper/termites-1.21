@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "chitin",
+  "key": {
+    "#": {
+      "item": "termites:scorching_chitin"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "termites:scorching_chitin_block"
+  }
+}

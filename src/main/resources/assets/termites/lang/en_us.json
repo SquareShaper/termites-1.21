@@ -1,6 +1,7 @@
 {
   "item.termites.chitin": "Chitin",
   "item.termites.burnt_chitin": "Burnt Chitin",
+  "item.termites.scorching_chitin": "Scorching Chitin",
   "item.termites.termite_treat": "Termite Treat",
   "item.termites.raw_funny_clump": "Raw Funny Clump",
   "item.termites.funny_balls": "Funny Balls",
@@ -8,6 +9,7 @@
   "item.termites.funnifier": "Funnifier",
   "block.termites.chitin_block": "Chitin Block",
   "block.termites.hot_chitin_block": "Hot Chitin Block",
+  "block.termites.scorching_chitin_block": "Scorching Chitin Block",
   "block.termites.termite_mound": "Termite Mound",
   "block.termites.funny_ore": "Funny Ore",
   "itemgroup.termites.funny_items": "Funny Items",
