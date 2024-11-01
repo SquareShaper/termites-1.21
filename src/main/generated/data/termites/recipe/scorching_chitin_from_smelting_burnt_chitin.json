@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 1600,
+  "experience": 1.0,
+  "group": "chitin",
+  "ingredient": {
+    "item": "termites:burnt_chitin"
+  },
+  "result": {
+    "id": "termites:scorching_chitin"
+  }
+}

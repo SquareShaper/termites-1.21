@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_funny_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "termites:funny_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:raw_funny_clump_from_smelting_funny_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_funny_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:raw_funny_clump_from_smelting_funny_ore"
+    ]
+  }
+}

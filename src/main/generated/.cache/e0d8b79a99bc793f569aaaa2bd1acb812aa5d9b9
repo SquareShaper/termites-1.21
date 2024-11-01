@@ -1,0 +1,7 @@
+// 1.21	2024-11-01T14:09:09.517619	Termites/Block Loot Tables
+e32641448241ef0375125fdea3f4b3c8d0ab80b0 data\termites\loot_table\blocks\termite_mound.json
+5aa472b1685c8352116729b0c76de44a88d1d4ba data\termites\loot_table\blocks\funny_ore.json
+c008c34139424a002cf1d27de3eab9f8aee3a7e4 data\termites\loot_table\blocks\hot_chitin_block.json
+bb89c81794ab750ea48b37f0d68342bb4fed7fa9 data\termites\loot_table\blocks\laugh_block.json
+2661112f27d076080030ed820debee5bd573bcdd data\termites\loot_table\blocks\chitin_block.json
+1502df3d6582b6fa13bb216da01187c2750cb9aa data\termites\loot_table\blocks\scorching_chitin_block.json

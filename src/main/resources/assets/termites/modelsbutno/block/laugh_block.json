@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "termites:block/laugh_block_top",
+    "side": "termites:block/laugh_block"
+  }
+}

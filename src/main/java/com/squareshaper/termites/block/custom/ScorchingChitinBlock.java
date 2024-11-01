@@ -1,24 +1,17 @@
 package com.squareshaper.termites.block.custom;
 
-import net.minecraft.block.AirBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.recipe.RecipeManager;
-import net.minecraft.recipe.RecipeType;
-import net.minecraft.recipe.input.SingleStackRecipeInput;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
-import net.minecraft.world.WorldAccess;
 
 public class ScorchingChitinBlock extends Block {
     public ScorchingChitinBlock(Settings settings) {
@@ -41,19 +34,23 @@ public class ScorchingChitinBlock extends Block {
         //only run on server
         if (!world.isClient()) {
             //BURN IT!
-            entity.setOnFireFor(6);
+            if (!entity.isOnFire()) {
+                entity.setOnFireFor(0.5f);
+                //only actually play the sound when the entity is set on fire
+                world.playSound(null, pos, SoundEvents.BLOCK_LAVA_EXTINGUISH, SoundCategory.BLOCKS);
+            }
+            //also do damage
             entity.damage(world.getDamageSources().onFire(), 2);
-            world.playSound(null, pos, SoundEvents.BLOCK_LAVA_EXTINGUISH, SoundCategory.BLOCKS);
         }
         super.onSteppedOn(world, pos, state, entity);
     }
 
-    //this is supposed to light nearby blocks on fire... but it crashes xD
-//    @Override
-//    protected BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
-//        if(world.getBlockState(neighborPos.up()).getBlock() instanceof AirBlock) {
-//            world.setBlockState(neighborPos.up(), new BlockState(new AirBlock(Settings.create()), null, null), 0);
-//        }
-//        return super.getStateForNeighborUpdate(state, direction, neighborState, world, pos, neighborPos);
-//    }
+    //this is supposed to light nearby blocks on fire...
+    @Override
+    protected void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+        if (!world.isClient()) {
+            world.playSound(null, pos, SoundEvents.BLOCK_BELL_RESONATE, SoundCategory.BLOCKS);
+        }
+        super.randomTick(state, world, pos, random);
+    }
 }

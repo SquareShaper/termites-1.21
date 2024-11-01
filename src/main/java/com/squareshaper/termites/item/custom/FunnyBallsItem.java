@@ -4,6 +4,8 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ProjectileItem;
+import net.minecraft.item.tooltip.TooltipType;
+import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
 import net.minecraft.world.World;
 import net.minecraft.entity.projectile.ProjectileEntity;
@@ -14,6 +16,8 @@ import net.minecraft.stat.Stats;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Position;
+
+import java.util.List;
 
 public class FunnyBallsItem extends Item implements ProjectileItem {
     public FunnyBallsItem(Item.Settings settings) {
@@ -59,5 +63,10 @@ public class FunnyBallsItem extends Item implements ProjectileItem {
                 0.5F,
                 0.4F / (world.getRandom().nextFloat() * 0.4F + 0.8F)
         );
+    }
+    @Override
+    public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType options) {
+        tooltip.add(Text.translatable("tooltip.termites.item.funny_balls"));
+        super.appendTooltip(stack, context, tooltip, options);
     }
 }

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "group": "funny",
+  "ingredient": {
+    "item": "termites:funny_ore"
+  },
+  "result": {
+    "id": "termites:raw_funny_clump"
+  }
+}

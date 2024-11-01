@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "termites:raw_funny_clump"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "termites:funny_balls"
+  }
+}

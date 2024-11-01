@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_burnt_chitin": {
+      "conditions": {
+        "items": [
+          {
+            "items": "termites:burnt_chitin"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:scorching_chitin_from_smelting_burnt_chitin"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_burnt_chitin"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:scorching_chitin_from_smelting_burnt_chitin"
+    ]
+  }
+}

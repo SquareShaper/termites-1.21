@@ -21,6 +21,14 @@ public class ModItemGroups {
                         entries.add(ModItems.FUNNY_BALLS);
                         entries.add(ModItems.FUNNY_STICK);
                         entries.add(ModItems.FUNNIFIER);
+                        entries.add(ModBlocks.LAUGH_BLOCK);
+                        entries.add(ModBlocks.TERMITE_MOUND);
+                        entries.add(ModItems.CHITIN);
+                        entries.add(ModItems.BURNT_CHITIN);
+                        entries.add(ModItems.SCORCHING_CHITIN);
+                        entries.add(ModBlocks.CHITIN_BLOCK);
+                        entries.add(ModBlocks.HOT_CHITIN_BLOCK);
+                        entries.add(ModBlocks.SCORCHING_CHITIN_BLOCK);
                     })
                     .build());
 
