@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "termites:raw_funny_clump"
+      "item": "termites:funny_block"
     }
   ],
   "result": {
-    "count": 1,
+    "count": 9,
     "id": "termites:funny_balls"
   }
 }

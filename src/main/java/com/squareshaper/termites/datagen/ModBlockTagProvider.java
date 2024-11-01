@@ -29,5 +29,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.FUNNY_ORE);
+
+        getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.FUNNY_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.FUNNY_FENCE_GATE);
+        getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.FUNNY_WALL);
     }
 }

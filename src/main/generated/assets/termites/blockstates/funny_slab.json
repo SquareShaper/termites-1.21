@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "termites:block/funny_slab"
+    },
+    "type=double": {
+      "model": "termites:block/funny_block"
+    },
+    "type=top": {
+      "model": "termites:block/funny_slab_top"
+    }
+  }
+}

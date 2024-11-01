@@ -1,7 +1,17 @@
-// 1.21	2024-11-01T14:09:09.517619	Termites/Block Loot Tables
+// 1.21	2024-11-01T16:01:30.2452994	Termites/Block Loot Tables
+e466d85a5c90ce8261c9163babd4d295d2a53582 data\termites\loot_table\blocks\funny_fence_gate.json
 e32641448241ef0375125fdea3f4b3c8d0ab80b0 data\termites\loot_table\blocks\termite_mound.json
+c2fd1cce77218ddbd75bfb9de840f5a7c6c89622 data\termites\loot_table\blocks\funny_stairs.json
+fc9dec7a6a6c8c666cb977813cab95fe58efbb4b data\termites\loot_table\blocks\funny_pressure_plate.json
+1013f0854b51aa2ec7229582ec89f152402d2f9d data\termites\loot_table\blocks\laugh_block.json
+5e23b25240991f1ac844354bf392493a5576ada3 data\termites\loot_table\blocks\funny_fence.json
+d6c48214e218952e302d8a0192bb1849201b601c data\termites\loot_table\blocks\funny_door.json
+a2474d7033743db668fc1ffc8bef0ed6cf431fed data\termites\loot_table\blocks\funny_wall.json
+47f32259e66e8a00045edc94c4e45efcfd7069c3 data\termites\loot_table\blocks\funny_trapdoor.json
+71280edb0088506d0caede8ef2e64dcfba349153 data\termites\loot_table\blocks\funny_block.json
+b9793aee4646275928c3c823fc6c269095c8bbc3 data\termites\loot_table\blocks\funny_button.json
+1502df3d6582b6fa13bb216da01187c2750cb9aa data\termites\loot_table\blocks\scorching_chitin_block.json
 5aa472b1685c8352116729b0c76de44a88d1d4ba data\termites\loot_table\blocks\funny_ore.json
 c008c34139424a002cf1d27de3eab9f8aee3a7e4 data\termites\loot_table\blocks\hot_chitin_block.json
-bb89c81794ab750ea48b37f0d68342bb4fed7fa9 data\termites\loot_table\blocks\laugh_block.json
+14e978a0bf819059c8a56740806c54511d97395f data\termites\loot_table\blocks\funny_slab.json
 2661112f27d076080030ed820debee5bd573bcdd data\termites\loot_table\blocks\chitin_block.json
-1502df3d6582b6fa13bb216da01187c2750cb9aa data\termites\loot_table\blocks\scorching_chitin_block.json

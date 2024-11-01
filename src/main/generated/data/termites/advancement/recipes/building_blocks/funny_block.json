@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_funny_balls": {
+      "conditions": {
+        "items": [
+          {
+            "items": "termites:funny_balls"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:funny_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_funny_balls"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:funny_block"
+    ]
+  }
+}

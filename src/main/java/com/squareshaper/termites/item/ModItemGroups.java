@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 public class ModItemGroups {
     public static final ItemGroup FUNNY_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(Termites.MOD_ID, "funny_items"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.FUNNY_STICK))
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.RAW_FUNNY_CLUMP))
                     .displayName(Text.translatable("itemgroup.termites.funny_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.FUNNY_ORE);
@@ -21,6 +21,15 @@ public class ModItemGroups {
                         entries.add(ModItems.FUNNY_BALLS);
                         entries.add(ModItems.FUNNY_STICK);
                         entries.add(ModItems.FUNNIFIER);
+                        entries.add(ModBlocks.FUNNY_BLOCK);
+                        entries.add(ModBlocks.FUNNY_SLAB);
+                        entries.add(ModBlocks.FUNNY_STAIRS);
+                        entries.add(ModBlocks.FUNNY_WALL);
+                        entries.add(ModBlocks.FUNNY_FENCE);
+                        entries.add(ModBlocks.FUNNY_FENCE_GATE);
+                        entries.add(ModBlocks.FUNNY_BUTTON);
+                        entries.add(ModBlocks.FUNNY_DOOR);
+                        entries.add(ModBlocks.FUNNY_TRAPDOOR);
                         entries.add(ModBlocks.LAUGH_BLOCK);
                         entries.add(ModBlocks.TERMITE_MOUND);
                         entries.add(ModItems.CHITIN);

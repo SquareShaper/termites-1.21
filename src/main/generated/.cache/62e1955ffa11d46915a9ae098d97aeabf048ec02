@@ -1,5 +1,8 @@
-// 1.21	2024-11-01T14:09:09.5166186	Termites/Tags for minecraft:block
+// 1.21	2024-11-01T16:01:30.2432988	Termites/Tags for minecraft:block
 a1ae5c7b17a96b06dba08c838b776720fc0e16ef data\minecraft\tags\block\needs_stone_tool.json
 9312ca97c6a1e3ef01231e9e27b1bcf29b4c42b7 data\minecraft\tags\block\mineable\shovel.json
 30557257751c340a87ce55d011b0de4e58fdbdc0 data\minecraft\tags\block\mineable\pickaxe.json
+12d11245dd197687e6d795087352b43c794b111b data\minecraft\tags\block\walls.json
+ec78b4b3563c70a4eedf81c68152b66d1e658698 data\minecraft\tags\block\fence_gates.json
+f21674ce7224783e43cec3ebcf120eb79febe882 data\minecraft\tags\block\fences.json
 9312ca97c6a1e3ef01231e9e27b1bcf29b4c42b7 data\minecraft\tags\block\needs_iron_tool.json

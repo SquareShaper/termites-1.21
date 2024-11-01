@@ -6,9 +6,7 @@ import com.squareshaper.termites.block.custom.LaughBlock;
 import com.squareshaper.termites.block.custom.ScorchingChitinBlock;
 import com.squareshaper.termites.item.custom.ScorchingChitinBlockItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.ExperienceDroppingBlock;
+import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
@@ -63,6 +61,41 @@ public class ModBlocks {
                     AbstractBlock.Settings.create().strength(5.0F, 6.0F)
                             .requiresTool().sounds(BlockSoundGroup.STONE)));
 
+    //Funny Building Blocks
+    public static final Block FUNNY_BLOCK = registerBlock("funny_block",
+            new Block(AbstractBlock.Settings.create().strength(2.0F, 2.0F)
+                    .sounds(BlockSoundGroup.SLIME).slipperiness(1)));
+
+    public static final Block FUNNY_STAIRS = registerBlock("funny_stairs",
+            new StairsBlock(ModBlocks.FUNNY_BLOCK.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(2, 2).slipperiness(1)));
+    public static final Block FUNNY_SLAB = registerBlock("funny_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(2, 2).slipperiness(1)));
+
+    public static final Block FUNNY_BUTTON = registerBlock("funny_button",
+            new ButtonBlock(BlockSetType.MANGROVE, 2,
+                    AbstractBlock.Settings.create().strength(2, 2).slipperiness(1).noCollision()));
+    public static final Block FUNNY_PRESSURE_PLATE = registerBlock("funny_pressure_plate",
+            new PressurePlateBlock(BlockSetType.MANGROVE,
+                    AbstractBlock.Settings.create().strength(2, 2).slipperiness(1)));
+
+    public static final Block FUNNY_FENCE = registerBlock("funny_fence",
+            new FenceBlock(AbstractBlock.Settings.create().strength(2, 2).slipperiness(1)));
+    public static final Block FUNNY_FENCE_GATE = registerBlock("funny_fence_gate",
+            new FenceGateBlock(WoodType.MANGROVE,
+                    AbstractBlock.Settings.create().strength(2, 2).slipperiness(1)));
+    public static final Block FUNNY_WALL = registerBlock("funny_wall",
+            new WallBlock(AbstractBlock.Settings.create().strength(2, 2).slipperiness(1)));
+
+    public static final Block FUNNY_DOOR = registerBlock("funny_door",
+            new DoorBlock(BlockSetType.MANGROVE,
+                    AbstractBlock.Settings.create().strength(2, 2).slipperiness(1).nonOpaque()));
+    public static final Block FUNNY_TRAPDOOR = registerBlock("funny_trapdoor",
+            new TrapdoorBlock(BlockSetType.MANGROVE,
+                    AbstractBlock.Settings.create().strength(2, 2).slipperiness(1).nonOpaque()));
+
+
+    //Helper functions
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(Termites.MOD_ID, name), block);

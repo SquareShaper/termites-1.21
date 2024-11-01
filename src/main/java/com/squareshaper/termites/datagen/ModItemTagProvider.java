@@ -22,6 +22,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.FUNNY_STICK)
                 .add(ModItems.FUNNIFIER)
                 .add(ModBlocks.FUNNY_ORE.asItem())
-                .add(ModBlocks.LAUGH_BLOCK.asItem());
+                .add(ModBlocks.LAUGH_BLOCK.asItem())
+                .add(ModBlocks.FUNNY_BLOCK.asItem());
     }
 }

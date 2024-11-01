@@ -8,7 +8,6 @@ import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
-import net.minecraft.item.Items;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LootPoolEntry;
@@ -30,7 +29,24 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.CHITIN_BLOCK);
         addDrop(ModBlocks.HOT_CHITIN_BLOCK);
         addDrop(ModBlocks.SCORCHING_CHITIN_BLOCK);
+
         addDrop(ModBlocks.TERMITE_MOUND);
+
+        addDrop(ModBlocks.FUNNY_BLOCK);
+
+        addDrop(ModBlocks.FUNNY_SLAB, slabDrops(ModBlocks.FUNNY_SLAB));
+        addDrop(ModBlocks.FUNNY_STAIRS);
+
+        addDrop(ModBlocks.FUNNY_BUTTON);
+        addDrop(ModBlocks.FUNNY_PRESSURE_PLATE);
+
+        addDrop(ModBlocks.FUNNY_FENCE);
+        addDrop(ModBlocks.FUNNY_FENCE_GATE);
+        addDrop(ModBlocks.FUNNY_WALL);
+
+        addDrop(ModBlocks.FUNNY_DOOR, doorDrops(ModBlocks.FUNNY_DOOR));
+        addDrop(ModBlocks.FUNNY_TRAPDOOR);
+
         addDrop(ModBlocks.FUNNY_ORE, oreDrops(ModBlocks.FUNNY_ORE, ModItems.RAW_FUNNY_CLUMP));
         addDrop(ModBlocks.LAUGH_BLOCK, multipleOreDrops(ModBlocks.LAUGH_BLOCK, ModItems.FUNNY_BALLS, 6, 8));
     }

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "termites:funny_block"
+    },
+    "X": {
+      "item": "termites:funny_stick"
+    }
+  },
+  "pattern": [
+    "#X#",
+    "#X#"
+  ],
+  "result": {
+    "count": 3,
+    "id": "termites:funny_fence"
+  }
+}
