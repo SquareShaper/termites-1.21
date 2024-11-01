@@ -3,6 +3,7 @@ package com.squareshaper.termites.item;
 import com.squareshaper.termites.Termites;
 import com.squareshaper.termites.item.custom.FunnifierItem;
 import com.squareshaper.termites.item.custom.FunnyBallsItem;
+import com.squareshaper.termites.item.custom.FunnyPickerItem;
 import com.squareshaper.termites.item.custom.ScorchingChitinItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
@@ -53,6 +54,7 @@ public class ModItems {
     public static final Item FUNNY_BALLS = registerItem("funny_balls", new FunnyBallsItem(new Item.Settings().maxCount(64)));
     public static final Item FUNNY_STICK = registerItem("funny_stick", new Item(new Item.Settings()));
     public static final Item FUNNIFIER = registerItem("funnifier", new FunnifierItem(new Item.Settings().maxDamage(320)));
+    public static final Item FUNNY_PICKER = registerItem("funny_picker", new FunnyPickerItem(new Item.Settings().maxDamage(320)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Termites.MOD_ID, name), item);

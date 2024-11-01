@@ -21,6 +21,7 @@ public class ModItemGroups {
                         entries.add(ModItems.FUNNY_BALLS);
                         entries.add(ModItems.FUNNY_STICK);
                         entries.add(ModItems.FUNNIFIER);
+                        entries.add(ModItems.FUNNY_PICKER);
                         entries.add(ModBlocks.FUNNY_BLOCK);
                         entries.add(ModBlocks.FUNNY_SLAB);
                         entries.add(ModBlocks.FUNNY_STAIRS);

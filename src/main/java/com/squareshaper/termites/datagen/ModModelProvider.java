@@ -55,5 +55,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SCORCHING_CHITIN, Models.GENERATED);
         itemModelGenerator.register(ModItems.TERMITE_TREAT, Models.GENERATED);
         itemModelGenerator.register(ModItems.FUNNIFIER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.FUNNY_PICKER, Models.HANDHELD);
     }
 }
