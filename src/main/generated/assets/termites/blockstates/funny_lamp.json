@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "termites:block/funny_lamp"
+    },
+    "clicked=true": {
+      "model": "termites:block/funny_lamp_active"
+    }
+  }
+}

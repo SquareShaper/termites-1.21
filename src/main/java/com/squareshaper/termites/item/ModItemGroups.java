@@ -30,6 +30,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.FUNNY_BUTTON);
                         entries.add(ModBlocks.FUNNY_DOOR);
                         entries.add(ModBlocks.FUNNY_TRAPDOOR);
+                        entries.add(ModBlocks.FUNNY_LAMP);
                         entries.add(ModBlocks.LAUGH_BLOCK);
                         entries.add(ModBlocks.TERMITE_MOUND);
                         entries.add(ModItems.CHITIN);

@@ -1,7 +1,8 @@
-// 1.21	2024-11-01T16:01:30.2482993	Termites/Recipes
+// 1.21	2024-11-01T17:30:35.82757	Termites/Recipes
 7d3880e3496ccd82d971008717ab1d4083df3aa1 data\termites\recipe\funny_fence_gate.json
 61f1435f717c6f97b8647e9581e60e5bece070b9 data\termites\recipe\laugh_block_from_slime_block.json
 ed2f04c4e2ceb808a40ae39a1ecd886aaf453fc7 data\termites\advancement\recipes\misc\funny_balls.json
+e698564ee4efff55843ecada2057c3bad8c4edbe data\termites\recipe\funny_lamp.json
 08fa5023d98341a5e97ee79ea99663f1a1f00969 data\termites\recipe\funny_slab.json
 48c49acc09362d55dcd8f9afdf50b971f588ff83 data\termites\advancement\recipes\decorations\laugh_block.json
 0641f08ef725981858848331a5576a45f0d366b1 data\termites\recipe\funny_balls.json
@@ -12,6 +13,7 @@ a469d85d64a9a788f866af484e2d42c6bc5c41d4 data\termites\recipe\hot_chitin_block.j
 cfb8de65923c64e0534930b8db1cc45fb5250b6e data\termites\advancement\recipes\building_blocks\funny_block.json
 4ee83c4c394aea03a2029b5c2727b9b1bd94bd8d data\termites\recipe\funny_trapdoor.json
 9a1fc528e452e5071812819776cb43d1db2fd8ff data\termites\recipe\funny_door.json
+4cae00436ee3f655f8e66d9b7ecfd5e903c44918 data\termites\advancement\recipes\decorations\funny_lamp.json
 57323882dbce7b7c6d9989436c7fe805f0f549cd data\termites\advancement\recipes\redstone\funny_button.json
 8bed8508ac4a9831f39ec4158c59d7b5b25cf0d0 data\termites\advancement\recipes\misc\scorching_chitin.json
 f8fc2d58bbfb322e570183856fc8e52b5d9001c9 data\termites\recipe\scorching_chitin_from_smelting_burnt_chitin.json

@@ -1,6 +1,7 @@
 package com.squareshaper.termites.block;
 
 import com.squareshaper.termites.Termites;
+import com.squareshaper.termites.block.custom.FunnyLampBlock;
 import com.squareshaper.termites.block.custom.HotChitinBlock;
 import com.squareshaper.termites.block.custom.LaughBlock;
 import com.squareshaper.termites.block.custom.ScorchingChitinBlock;
@@ -93,6 +94,10 @@ public class ModBlocks {
     public static final Block FUNNY_TRAPDOOR = registerBlock("funny_trapdoor",
             new TrapdoorBlock(BlockSetType.MANGROVE,
                     AbstractBlock.Settings.create().strength(2, 2).slipperiness(1).nonOpaque()));
+
+    public static final Block FUNNY_LAMP = registerBlock("funny_lamp",
+            new FunnyLampBlock(AbstractBlock.Settings.create()
+                    .strength(1).luminance(state -> state.get(FunnyLampBlock.clicked) ? 30 : 0)));
 
 
     //Helper functions

@@ -6,6 +6,15 @@
     "termites:funnifier",
     "termites:funny_ore",
     "termites:laugh_block",
-    "termites:funny_block"
+    "termites:funny_block",
+    "termites:funny_button",
+    "termites:funny_pressure_plate",
+    "termites:funny_door",
+    "termites:funny_trapdoor",
+    "termites:funny_slab",
+    "termites:funny_stairs",
+    "termites:funny_fence",
+    "termites:funny_fence_gate",
+    "termites:funny_wall"
   ]
 }

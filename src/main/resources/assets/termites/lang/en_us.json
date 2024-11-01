@@ -22,6 +22,7 @@
   "block.termites.funny_wall": "Funny Wall",
   "block.termites.funny_door": "Funny Door",
   "block.termites.funny_trapdoor": "Funny Trapdoor",
+  "block.termites.funny_lamp": "Funny Lamp",
   "block.termites.laugh_block": "Laugh Block",
   "itemgroup.termites.funny_items": "Funny Items",
   "death.attack.funny": "%1$s had too much fun",

@@ -1,13 +1,12 @@
 package com.squareshaper.termites.datagen;
 
 import com.squareshaper.termites.block.ModBlocks;
+import com.squareshaper.termites.block.custom.FunnyLampBlock;
 import com.squareshaper.termites.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
-import net.minecraft.data.client.TexturedModel;
+import net.minecraft.data.client.*;
+import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
 
@@ -39,6 +38,11 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoor(ModBlocks.FUNNY_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.FUNNY_TRAPDOOR);
+
+        Identifier lampOffIdentifier = TexturedModel.CUBE_ALL.upload(ModBlocks.FUNNY_LAMP, blockStateModelGenerator.modelCollector);
+        Identifier lampOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.FUNNY_LAMP, "_active", Models.CUBE_ALL, TextureMap::all);
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.FUNNY_LAMP)
+                .coordinate(BlockStateModelGenerator.createBooleanModelMap(FunnyLampBlock.clicked, lampOnIdentifier, lampOffIdentifier)));
     }
 
     @Override

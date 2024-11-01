@@ -23,6 +23,15 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.FUNNIFIER)
                 .add(ModBlocks.FUNNY_ORE.asItem())
                 .add(ModBlocks.LAUGH_BLOCK.asItem())
-                .add(ModBlocks.FUNNY_BLOCK.asItem());
+                .add(ModBlocks.FUNNY_BLOCK.asItem())
+                .add(ModBlocks.FUNNY_BUTTON.asItem())
+                .add(ModBlocks.FUNNY_PRESSURE_PLATE.asItem())
+                .add(ModBlocks.FUNNY_DOOR.asItem())
+                .add(ModBlocks.FUNNY_TRAPDOOR.asItem())
+                .add(ModBlocks.FUNNY_SLAB.asItem())
+                .add(ModBlocks.FUNNY_STAIRS.asItem())
+                .add(ModBlocks.FUNNY_FENCE.asItem())
+                .add(ModBlocks.FUNNY_FENCE_GATE.asItem())
+                .add(ModBlocks.FUNNY_WALL.asItem());
     }
 }

@@ -125,5 +125,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(ModBlocks.FUNNY_BLOCK)
                 .criterion(hasItem(ModBlocks.FUNNY_BLOCK), conditionsFromItem(ModBlocks.FUNNY_BLOCK))
                 .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.FUNNY_LAMP, 9)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .input('#', ModBlocks.FUNNY_BLOCK)
+                .input('X', Items.GLOWSTONE)
+                .criterion(hasItem(ModBlocks.FUNNY_BLOCK), conditionsFromItem(ModBlocks.FUNNY_BLOCK))
+                .offerTo(recipeExporter);
     }
 }
